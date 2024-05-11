@@ -41,7 +41,7 @@ const Food = (props) => {
   return (
     <div className="mt-8 cursor-pointer">
     
-      <div className="flex flex-col bg-gray-100 border shadow-sm rounded-lg dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.9] overflow-hidden">
+      <div className="flex flex-col bg-gray-100 border shadow-sm rounded-lg dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[0.9] overflow-hidden">
   <img className="w-full h-60 rounded-t-md cursor-pointer  hover:scale-105 transition-all ease-out duration-200" src={props.foodItems.img} alt="Image Description"/>
   <div className="p-4 md:p-5">
     <h3 className="text-lg font-bold text-gray-800 dark:text-white">

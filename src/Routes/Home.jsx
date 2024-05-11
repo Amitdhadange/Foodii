@@ -102,11 +102,11 @@ const Home = () => {
                 <div className="flex justify-between items-center flex-col">
                   <h2
                     kay={data._id}
-                    className="text-2xl font-bold tracking-tight text-gray-900"
+                    className="text-2xl font-bold tracking-tight mt-4 text-gray-900"
                   >
                     {data.CategoryName}
                   </h2>
-                  <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-4 ml-4">
+                  <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-4 ml-4">
                     {foodItems !== [] ? (
                       foodItems
                         .filter(

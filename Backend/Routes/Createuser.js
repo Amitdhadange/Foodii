@@ -52,7 +52,6 @@ router.post("/LoginUser",
           .status(400)
           .json({ errors: "try login with currect credintals" });
       }
-
       const pwdcompare = await bcrypt.compare(req.body.password, userdata.password)
       if (!pwdcompare) {
         return res

@@ -3,7 +3,6 @@ const app = express()
 const port = 3000
 const mongoDB = require("./db");
  mongoDB();
-
  app.use((req, res,next) => {
   res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173");
   res.header(
@@ -12,7 +11,6 @@ const mongoDB = require("./db");
   );  
   next();
 });
-
 app.use(express.json())
 app.use('/api',require("./Routes/Createuser"))
 app.use('/api',require("./Routes/Displaydata"))
